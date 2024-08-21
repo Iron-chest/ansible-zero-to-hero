@@ -33,6 +33,18 @@ sudo vim /etc/ansible/hosts
 ```
 ansible -i /etc/ansible/hosts -m ping all
 ```
+- To install openjdk on all hosts in the hosts file
+```
+ansible -i /etc/ansible/hosts -m shell -a "apt install openjdk" all
+```
+[webservers]
+ubuntu@ipaddress
+ec2-user@ipaddress
+
+- To install openjdk on specific hosts in the hosts file
+```
+ansible -i /etc/ansible/hosts -m shell -a "apt install openjdk" webservers
+```
 
 ### YAML
 
