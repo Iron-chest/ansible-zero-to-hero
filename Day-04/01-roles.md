@@ -91,3 +91,5 @@ multiple environments, reducing the risk of configuration drift.
 ```
 ansible-galaxy role init <name-of-the-role>
 ```
+### To remove extra spaces on a file in linux
+- CTRL + V + ESC & D
