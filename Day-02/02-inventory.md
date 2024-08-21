@@ -24,6 +24,16 @@ ansible_user=admin
 ansible_ssh_private_key_file=/path/to/key
 ```
 
+The hosts file similar to the inventory file `inventory.ini` file can also be located in `/etc/ansible/hosts`
+- To edit the file
+```
+sudo vim /etc/ansible/hosts
+```
+- To run ansible adhoc commands to ping the remote server (hosts) if they are accessible run
+```
+ansible -i /etc/ansible/hosts -m ping all
+```
+
 ### YAML
 
 ```
