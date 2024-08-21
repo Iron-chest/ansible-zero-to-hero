@@ -33,6 +33,11 @@ sudo vim /etc/ansible/hosts
 ```
 ansible -i /etc/ansible/hosts -m ping all
 ```
+- Is to necessary to inculde the path `/etc/ansible/hosts` to the host file. ansible would automatically reference and locate the host file.
+```
+ansible -m ping all
+```
+
 - To install openjdk on all hosts in the hosts file
 ```
 ansible -i /etc/ansible/hosts -m shell -a "apt install openjdk" all
@@ -42,11 +47,11 @@ ansible -i /etc/ansible/hosts -m shell -a "apt install openjdk" all
 ubuntu@ipaddress
 ec2-user@ipaddress
 ```
-
 - To install openjdk on specific hosts in the hosts file
 ```
 ansible -i /etc/ansible/hosts -m shell -a "apt install openjdk" webservers
 ```
+
 
 ### YAML
 
