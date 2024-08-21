@@ -107,3 +107,6 @@ my_collection/
   community.general.my_module:
     option: value
 ```
+
+### To execute the playbook
+- You can run the following commands `ansible-playbook first-playbook.yaml` or `ansible-playbook -i /etc/ansible/hosts first-playbook.yaml`
