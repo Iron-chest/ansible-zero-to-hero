@@ -37,9 +37,11 @@ ansible -i /etc/ansible/hosts -m ping all
 ```
 ansible -i /etc/ansible/hosts -m shell -a "apt install openjdk" all
 ```
+```
 [webservers]
 ubuntu@ipaddress
 ec2-user@ipaddress
+```
 
 - To install openjdk on specific hosts in the hosts file
 ```
