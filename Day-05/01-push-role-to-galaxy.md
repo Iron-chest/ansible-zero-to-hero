@@ -55,4 +55,14 @@ git init
 ```
 git remote add origin <URL_TO_GITHUB_REPO>
 ```
-8. Run `git remote -v` to ensure that the git repo has been added successfully, then run `git add.`,`git commit -am "add all files"` and `git push origin main`
+8. Run `git remote -v` to ensure that the git repo has been added successfully, then run
+```
+git add .
+```
+```
+git commit -am "add all files"
+````
+and
+```
+git push origin main
+```
