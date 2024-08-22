@@ -47,3 +47,12 @@ ansible-galaxy role import <your_github_username> <role-name>
 ```
 ansible-galaxy <name_of_playbook.yaml>
 ```
+6. First, go into the role you have created e.g `httpd` and initialize a git repository
+```
+git init
+```
+7. Then, add the created repository from GitHub to the Linux server
+```
+git remote add origin <URL_TO_GITHUB_REPO>
+```
+8. Run `git remote -v` to ensure that the git repo has been added successfully, then run `git add.`,`git commit -am "add all files"` and `git push origin main`
