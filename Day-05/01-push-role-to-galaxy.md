@@ -43,3 +43,7 @@ git push -u origin main
 ```
 ansible-galaxy role import <your_github_username> <role-name>
 ```
+5. To run a playbook using an ansible role e.g `ansible-galaxy docker-playbook.yaml`
+```
+ansible-galaxy <name_of_playbook.yaml>
+```
