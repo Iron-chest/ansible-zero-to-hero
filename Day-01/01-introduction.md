@@ -18,5 +18,20 @@ For automating Linux and Windows, Ansible connects to managed nodes and pushes o
 
 For automating network devices and other IT appliances where modules cannot be executed, Ansible runs on the control node. Since Ansible is agentless, it can still communicate with devices without requiring an application or service to be installed on the managed node.
 
+## create an ansible user 
+```
+sudo adduser ansible
+sudo hostname ansible
+echo "ansible  ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/ansible
+sudo su - ansible
+ansible --version
+```
+## To Install ansible on Ubuntu
+```
+sudo apt update -y
+sudo apt install software-properties-common -y
+sudo add-apt-repository --yes --update ppa:ansible/ansible
+sudo apt install ansible -y
+```
 
 
