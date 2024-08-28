@@ -19,7 +19,13 @@ Automate the shutdown of Ubuntu Instances only using Ansible Conditionals
 
 Hint: Use `when` condition on ansible `gather_facts`
 
-
+Hint: To check the details for ansible_facts
+```
+tasks:
+  - name: Print all ansible gather facts (ansible_facts)
+    ansible.builtin.debug:
+      vars ansible_facts
+```
 
 
 
