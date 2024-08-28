@@ -21,10 +21,14 @@ Hint: Use `when` condition on ansible `gather_facts`
 
 Hint: To check the details for ansible_facts
 ```
-tasks:
-  - name: Print all ansible gather facts (ansible_facts)
-    ansible.builtin.debug:
-      vars ansible_facts
+---
+- hosts: all
+  become: true
+
+  tasks:
+    - name: Print all ansible managed nodes gather facts
+      ansible.builtin.debug:
+        var: ansible_facts
 ```
 
 
