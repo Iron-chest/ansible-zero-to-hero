@@ -1,11 +1,11 @@
-Hint: To ignore the gather facts tasks while running ansible-playbook commands
+1. Hint: To ignore the gather facts tasks while running ansible-playbook commands
 ```
 ---
 - hosts: all
   become: true
   gather_facts: false
 ```
-Hint: When running one comands
+2. Hint: When running one comands
 ```
   tasks:
     - name: Make sure the packages openssh and openssl are up to date
@@ -13,7 +13,7 @@ Hint: When running one comands
         name: openssh
         state: latest
 ```
-Hint: When running mutliple comands
+3. Hint: When running mutliple comands
 ```
   tasks:
     - name: Make sure the packages openssh and openssl are up to date
