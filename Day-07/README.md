@@ -30,13 +30,7 @@ Hint: To check the details for ansible_facts
       ansible.builtin.debug:
         var: ansible_facts
 ```
-Hint: To ignore the gather facts tasks while running ansible-playbook commands
-```
----
-- hosts: all
-  become: true
-  gather_facts: false
-```
+
 
 
 
