@@ -3,7 +3,9 @@
 ## EC2 Instances
 
 ### Using Public Key
-
+1. Create a key pair to be reference later on e.g `/keys/DevOpsForJesus.pem`
+2. Generate a ssh key by running the `ssh-keygen` command
+3. Run the command below
 ```
 ssh-copy-id -f "-o IdentityFile <PATH TO PEM FILE>" ubuntu@<INSTANCE-PUBLIC-IP>
 ```
