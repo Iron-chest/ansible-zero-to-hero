@@ -7,3 +7,4 @@
       ansible.builtin.command: /sbin/shutdown -t now
       when:
        ansible_facts['os_family'] == "Debian"
+       # ansible_facts['os_family'] == "RedHat" # for Amazon Linux, and RedHat Distros
