@@ -3,7 +3,7 @@
 ## Install Python3
 
 ```
-apt install python3-pip
+sudo apt install python3-pip -y
 ```
 
 ## Install boto3
