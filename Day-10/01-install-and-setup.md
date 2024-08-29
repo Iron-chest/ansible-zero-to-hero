@@ -1,5 +1,11 @@
 # Install and Setup Ansible for Implementing Policy as Code on AWS
 
+## Install Python3
+
+```
+sudo apt install python3-pip -y
+```
+
 ## Install boto3
 
 ```
